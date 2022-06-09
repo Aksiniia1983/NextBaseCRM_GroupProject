@@ -1,18 +1,13 @@
-package com.nextBaseCRM.test.Tests;
+package com.nextBaseCRM.test.us02_send_message;
 
 import com.nextBaseCRM.test.base.TestBase;
-import com.nextBaseCRM.test.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import java.util.concurrent.TimeUnit;
-
-public class Test_003 extends TestBase {
+public class Test_03 extends TestBase {
 
     @BeforeMethod
     public void setUp(){
