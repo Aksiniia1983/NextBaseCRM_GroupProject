@@ -1,4 +1,4 @@
-package com.nextBaseCRM.test;
+package com.nextBaseCRM.test.Tests;
 
 import com.nextBaseCRM.test.base.TestBase;
 import com.nextBaseCRM.test.utilities.WebDriverFactory;
@@ -13,8 +13,6 @@ import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 
 public class Test_003 extends TestBase {
-
-
 
     @BeforeMethod
     public void setUp(){
@@ -51,8 +49,5 @@ public class Test_003 extends TestBase {
         Assert.assertEquals(actualText1,expectedText1,"Link is successfully attached to message");
 
     }
-
-
-
 
 }
