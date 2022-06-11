@@ -9,8 +9,8 @@ public class TC_01_SendMessage extends TestBase {
 
 
     @Test
-    public void testSendMessage() {
-        driver.get("https://login2.nextbasecrm.com/auth/");
+    public void testSendMessage() throws InterruptedException {
+        driver.get("https://login2.nextbasecrm.com/");
 
         WebElement login = driver.findElement(By.xpath("//input[@name='USER_LOGIN']"));
         login.sendKeys("hr40@cybertekschool.com");
@@ -21,10 +21,6 @@ public class TC_01_SendMessage extends TestBase {
         WebElement loginBtn = driver.findElement(By.xpath("//input[@value='Log In']"));
         loginBtn.click();
 
-
-        WebElement homeBtn = driver.findElement(By.xpath("//span[.='CRM']"));
-        homeBtn.click();
-
         WebElement messageBtn = driver.findElement(By.xpath("//span[@class='feed-add-post-form-link feed-add-post-form-link-active']"));
         messageBtn.click();
 
@@ -33,7 +29,7 @@ public class TC_01_SendMessage extends TestBase {
         driver.switchTo().frame(iframe);
 
         WebElement messageBody = driver.findElement(By.xpath("//body[@style='min-height: 117px;']"));
-        messageBody.sendKeys("Java is fun");
+        messageBody.sendKeys("Hello World! Java is fun!");
 
         driver.switchTo().defaultContent();
 
