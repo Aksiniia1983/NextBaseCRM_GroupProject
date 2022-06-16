@@ -1,12 +1,13 @@
 package com.nextBaseCRM.test.utilities;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 public class CRM_Utilities {
-    public static void crm_login(WebDriver driver){
-
+    public static void crm_login(WebDriver driver) {
 
         driver.get("https://login2.nextbasecrm.com/");
 
@@ -30,8 +31,5 @@ public class CRM_Utilities {
         passwordBox.sendKeys(password);
 
         driver.findElement(By.className("login-btn")).click();
-
-
     }
-
 }
